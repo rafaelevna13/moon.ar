@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moon.ar</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="index.js">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Nanum+Gothic&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header">
+        <div class="container-fluid">
+            <!-- d-flex justify-content-around -->
+            <nav id="navbar" class="navbar d-flex justify-content-between align-content-center">
+                <ul>
+                    <!-- <li><a href="#About_Us">О нас</a></li> -->
+                    <li><a href="#instruction" class="navbar__a">Инструкция</a></li>
+                    <li><a href="#store_list" class="navbar__a">Список магазинов</a></li>
+                    <li><a href="#faq" class="navbar__a">FAQ</a></li>
+                    <li><a href="#contact" class="navbar__a">Контакты</a></li>
+                    <!-- <li><a href="#Delivery">Доставка</a></li>
+                    <li><a href="#Price"></a>Стоимость услуг</li>-->
+                </ul>
+                <ul>
+                    <li><a href="index.html" class="logo">
+                            <!-- Uncomment the line below if you also want to use the logo text. -->
+                            <!-- <img src="/img/header/Navbar/logo.png" alt=""> -->
+                            <!-- <a href="index.html" class="logo d-flex align-items-center"> -->
+                            moon<span>.ar</span>
+                        </a></li>
+                </ul>
+                <ul>
+                    <li><a href="#purchase"><button class="button0">Оформить заказ</button></a></li>
+                    <!-- <li><a href="#"><img src="/assets/img/basket.svg" alt=""></a></li> иконка basket -->
+                    <!-- <li><a href="#"><img src="/assets/img/like.svg" alt=""></a></li> иконка like -->
+                    <!-- <li><a href="#"></a></li>    иконка инстаграм -->
+                    <li><a href="#chat" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
+                                src="/assets/img/Send.svg" alt=""></a></li>
+                    <li><a href="#send"><img src="/assets/img/Chat.svg" alt=""></a></li>
+                </ul>
+            </nav> <!-- End navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <!--модальное окно-->
+    <div class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Мы всегда на связи <img src="/assets/img/like.svg" alt=""></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">Вы можете написать нам в одной из предлагаемых нами социальных сетей</p>
+                </div>
+                <div class="modal-footer d-flex justify-content-around">
+                    <a href="#"><button class="button">Instagram</button></a>
+                    <a href="#"><button class="button">Telegram</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ======= About_Us Section ======= -->
+    <section class="About_Us" id="About_Us">
+        <div class="container">
+            <div class="About_Us__all row">
+                <div class="">
+                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video"><i
+                            class="bi bi-play-circle"></i><span>Почему мы?</span></a>
+                </div>
+                <div class="col-6 d-flex">
+                    <div class="About_Us__text">
+                        <h1>Откройте для себя мир престижных брендов: <br> гарантированное качество и удовольствие от шопинга </h1>
+                        <br><br>
+                        <p>Мы рады предложить вам возможность стать обладателем престижных товаров ведущих брендов. Наша компания гарантирует подлинность каждого приобретаемого товара, обеспечивая нашим клиентам исключительно высокое качество и надежность.</p>
+                        <p>Мы помогаем людям наполнить свою жизнь прекрасными творениями мастеров, сделать ее красивее и получить от шопинга максимум удовольствия.</p>
+                        <!-- <div class="d-flex justify-content-evenly">
+                            <a href="#about" class="btn-get-started">About Us</a>
+                            <a href="#">Explore courses</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="/assets/img/header/Navbar/illustration.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="instruction"></div>
+    <!-- ======= Instruction Section ======= -->
+    <section class="instruction" id="instruction">
+        <div class="mb-3">
+            <div class="text-center h-25 mb-5">
+                <h2 class="mb-3">Инструкция</h2>
+                <p>Осталось совсем чуть-чуть и вы будете в своих руках держать желанный товар</p>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div class="instruction_form mx-auto">
+                    <h1 class="text-center">1 <span>шаг</span></h1>
+                    <h5 class="text-center mb-4">Выбирайте любые товары</h5>
+                    <p>Выбирайте товары из списка <a href="#store_list">предлагаемых нами магазинов</a></p>
+                    <span>*</span><i>Вы можете заказть что угодно: женскую, мужскую, детскую одежду, предметы интерьера,
+                        косметику, игрушки и многое другое.</i>
+                </div>
+                <div class="instruction_form mx-auto">
+                    <h1 class="text-center">2 <span>шаг</span></h1>
+                    <h5 class="text-center  mb-4">Заполните форму заказа</h5>
+                    <p>Нам понадобится основная информация о ваc и способе доставки.</p>
+                    <span>*</span><i>Не забудьте добавить в форму заказа ссылки на нужные товары, указать цвет и размер
+                        в
+                        соответствующем поле.</i>
+                </div>
+                <div class="instruction_form mx-auto">
+                    <h1 class="text-center">3 <span>шаг</span></h1>
+                    <h5 class="text-center mb-5">Получите расчёт и оплатите заказ</h5>
+                    <p class="mt-5">Вместе с расчётом к вам прийдут реквизиты для оплаты. <br>
+                        Что бы ускорить процесс, <a href="#chat">напишите нам</a> в удобный для вас мессенджер, о
+                        переводе.</p>
+                </div>
+                <div class="instruction_form mx-auto">
+                    <h1 class="text-center">4 <span>шаг</span></h1>
+                    <h5 class="text-center mb-5">Всё! Заказ оформлен.</h5>
+                    <p class="mt-5">Через 12-15 рабочих дней к вам прийдет уведомление от нас, с номером ТТН для
+                        получения
+                        заказа
+                        на почте. Не терпится ждать? <br> Проверить статус заказа ты всегда можешь в наших
+                        мессенджерах, написав нам!</p>
+                </div>
+            </div>
+            <p class="text-center mt-5 mb-5"><a href="#purchase"><button class="button">Оформить заказ</button></a></p>
+        </div>
+    </section>
+
+
+
+    <div id="store_list"></div>
+    <!-- ======= Store_list Section ======= -->
+    <section class="store_list">
+        <div class="container">
+            <!-- <div>
+                <p>Ready to learn?</p>
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <p>Featured Courses</p>
+                    <a href="#"><button class="btn">View all courses</button></a>
+                </div>
+            </div> -->
+            <div class="store_list__multi text-center ">
+                <h2>Мультибрендовые магазины</h2>
+                <p>(нажмите на имя нужного магазина для перехода)</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://www.massimodutti.com/"><img
+                                        src="https://thumb.tildacdn.com/tild3630-3631-4366-b636-643839383832/-/resize/320x/-/format/webp/5841a09ba6515b1e0ad7.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.stories.com/en/index.html"><img
+                                        src="https://thumb.tildacdn.com/tild6137-6332-4235-b465-363362386439/-/resize/320x/-/format/webp/39237.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.zara.com/"><img
+                                        src="https://thumb.tildacdn.com/tild3064-6431-4363-a463-303434663733/-/resize/320x/-/format/webp/asos-logo-vector.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.karl.com/en"><img
+                                        src="https://thumb.tildacdn.com/tild6638-3139-4630-b435-613161656265/-/resize/320x/-/format/webp/merchant_yoox.png"
+                                        alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.massimodutti.com/"><img
+                                        src="https://thumb.tildacdn.com/tild3264-6164-4563-b962-363237633861/-/resize/320x/-/format/webp/NEIMANMARCUS.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.stories.com/en/index.html"><img
+                                        src="https://thumb.tildacdn.com/tild6166-3436-4634-b231-663065636335/-/resize/320x/-/format/webp/net-a-porter-logo-ve.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.zara.com/"><img
+                                        src="https://thumb.tildacdn.com/tild6461-3765-4363-b834-663466333662/-/resize/320x/-/format/webp/93210ad21668bdd2485d.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.karl.com/en"><img
+                                        src="https://thumb.tildacdn.com/tild3433-3862-4532-a562-373134393631/-/resize/320x/-/format/webp/photo-shop-listing42.jpg"
+                                        alt=""></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="store_list__mono text-center">
+                <h2>Монобрендовые магазины</h2>
+                <p>(нажмите на имя нужного магазина для перехода)</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://www.massimodutti.com/"><img
+                                        src="https://thumb.tildacdn.com/tild3633-3831-4234-b765-386461373934/-/resize/320x/-/format/webp/Massimo_Dutti_logo.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.stories.com/en/index.html"><img
+                                        src="https://thumb.tildacdn.com/tild6661-3835-4536-b433-386334366538/-/resize/320x/-/format/webp/_Other_Stories_logo.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.zara.com/"><img
+                                        src="https://thumb.tildacdn.com/tild3461-6363-4664-b763-636632303730/-/resize/320x/-/format/webp/zara_delivery.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.karl.com/en"><img
+                                        src="https://thumb.tildacdn.com/tild3732-6463-4339-b462-373766663537/-/resize/320x/-/format/webp/27472.png"
+                                        alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.massimodutti.com/"><img
+                                        src="https://thumb.tildacdn.com/tild6266-3464-4137-b862-313139343133/-/resize/320x/-/format/webp/MJ_Logo_2018_Black_F.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.massimodutti.com/"><img
+                                        src="https://thumb.tildacdn.com/tild3837-3937-4834-b538-386662653431/-/resize/320x/-/format/webp/emblem-Ralph-Lauren.jpg"
+                                        alt=""></a></td>
+                            <td><a href="https://www.zara.com/"><img
+                                        src="https://thumb.tildacdn.com/tild3661-6639-4764-a634-646666363638/-/resize/320x/-/format/webp/2000px-Kenzosvg.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.karl.com/en"><img
+                                        src="https://thumb.tildacdn.com/tild3838-3537-4630-b566-613262663238/-/resize/320x/-/format/webp/lacoste_delivery.png"
+                                        alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.massimodutti.com/"><img
+                                        src="https://thumb.tildacdn.com/tild3533-3762-4662-a361-333665646136/-/resize/320x/-/format/webp/furlazakaz.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.stories.com/en/index.html"><img
+                                        src="https://thumb.tildacdn.com/tild6661-3835-4536-b433-386334366538/-/resize/320x/-/format/webp/_Other_Stories_logo.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.zara.com/"><img
+                                        src="https://thumb.tildacdn.com/tild6336-3932-4731-b434-636366323737/-/resize/320x/-/format/webp/pumazakaz.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.karl.com/en"><img
+                                        src="https://thumb.tildacdn.com/tild6334-3662-4433-b836-356261306534/-/resize/320x/-/format/webp/nikeorder.png"
+                                        alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.massimodutti.com/"><img
+                                        src="https://thumb.tildacdn.com/tild3537-6263-4236-b537-366233373165/-/resize/320x/-/format/webp/eed809481962ac421663.jpg"
+                                        alt=""></a></td>
+                            <td><a href="https://www.stories.com/en/index.html"><img
+                                        src="https://thumb.tildacdn.com/tild6661-3835-4536-b433-386334366538/-/resize/320x/-/format/webp/_Other_Stories_logo.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.zara.com/"><img
+                                        src="https://thumb.tildacdn.com/tild6232-3965-4236-a466-376332363130/-/resize/320x/-/format/webp/uniqloorder.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.karl.com/en"><img
+                                        src="https://thumb.tildacdn.com/tild3334-3730-4232-b063-613538353835/-/resize/320x/-/format/webp/ogDefault.jpg"
+                                        alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.massimodutti.com/"><img
+                                        src="https://thumb.tildacdn.com/tild3537-6263-4236-b537-366233373165/-/resize/320x/-/format/webp/eed809481962ac421663.jpg"
+                                        alt=""></a></td>
+                            <td><a href="https://www.stories.com/en/index.html"><img
+                                        src="https://thumb.tildacdn.com/tild6661-3835-4536-b433-386334366538/-/resize/320x/-/format/webp/_Other_Stories_logo.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.zara.com/"><img
+                                        src="https://thumb.tildacdn.com/tild6232-3965-4236-a466-376332363130/-/resize/320x/-/format/webp/uniqloorder.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.karl.com/en"><img
+                                        src="https://thumb.tildacdn.com/tild3334-3730-4232-b063-613538353835/-/resize/320x/-/format/webp/ogDefault.jpg"
+                                        alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.massimodutti.com/"><img
+                                        src="https://thumb.tildacdn.com/tild3537-6263-4236-b537-366233373165/-/resize/320x/-/format/webp/eed809481962ac421663.jpg"
+                                        alt=""></a></td>
+                            <td><a href="https://www.stories.com/en/index.html"><img
+                                        src="https://thumb.tildacdn.com/tild6661-3835-4536-b433-386334366538/-/resize/320x/-/format/webp/_Other_Stories_logo.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.zara.com/"><img
+                                        src="https://thumb.tildacdn.com/tild6232-3965-4236-a466-376332363130/-/resize/320x/-/format/webp/uniqloorder.png"
+                                        alt=""></a></td>
+                            <td><a href="https://www.karl.com/en"><img
+                                        src="https://thumb.tildacdn.com/tild3334-3730-4232-b063-613538353835/-/resize/320x/-/format/webp/ogDefault.jpg"
+                                        alt=""></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div id="purchase"></div>
+    <!-- ======= Purchase Section ======= -->
+    <section class="purchase w-75 mx-auto">
+        <div class="container">
+            <div class="text-center">
+                <h2>Давайте оформим Ваш заказ</h2>
+                <p>Уже выбрали что заказать? <br>
+                    Просто заполните форму — остальное за нами!</p>
+            </div>
+            <div class="purchase_form">
+                <p>1. Давайте познакомимся поближе. Мы используем Ваши данные при отправке заказа.</p>
+                <input type="text" id="name" name="name" class="purchase_input w-100" placeholder="Введите ФИО"><label
+                    for="name"></label>
+                <p>2. Мы обещаем не звонить вам без лишней надобности. Но Ваш номер нам очень пригодится при отправке и
+                    для срочной связи с вами. <span>Если вы оформляли заказ с нами ранее, оставьте только
+                        Ваш номер, пропустите заполнение остальных личных данных и переходите к пункту 6.</span></p>
+                <input type="number" id="number" name="number" class="purchase_input w-100"
+                    placeholder="Введите Ваш номер"><label for="number"></label>
+                <p>3. Ваше Instagram-имя. Поможет нам найти Ваш заказ и ответить на вопросы в direct.</p>
+                <input type="text" id="instagram" name="instagram" class="purchase_input w-100"
+                    placeholder="Введите Ваше имя в instagram"><label for="instagram"></label>
+                <p>4. В каком городе вы бы хотели получить заказ?</p>
+                <input type="text" id="city" name="city" class="purchase_input w-100" placeholder="Город"><label
+                    for="city"></label>
+                <p>5. Выберите способ доставки. Все заказы доставляются к вам службой «Cdek». <br> Пожалуйста,
+                    укажите номер отделения, в котором вам будет удобно получить заказ</p>
+                <input type="text" id="delivery" name="delivery" class="purchase_input w-100"
+                    placeholder="Номер отделения"><label for="delivery"></label>
+                <p>6. Скопируйте с официального сайта <a href="#store_list">предлагаемых нами магазинов.</a> Вставьте
+                    ссылку на интересующий вас товар ниже.</p>
+                <input type="text" id="link" name="link" class="purchase_input w-100"
+                    placeholder="Вставьте сюда url-ссылку"><label for="link"></label>
+
+                <p>7. Введите цвет и размер для каждой позиции в Вашем заказе</p>
+                <input type="text" id="size" name="size" class="purchase_input w-100" placeholder="Размер и цвет"><label
+                    for="size"></label>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="no_need" value="no_need" name="help"
+                        checked="checked">
+                    <label class="custom-control-label" for="no_need">Мне не нужна помощь, я точно знаю свой
+                        размер.</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="need" value="need" name="help">
+                    <label class="custom-control-label" for="need">Я сомневаюсь, хотелось бы
+                        проконсультироваться.</label>
+                </div>
+
+                <p>8. Выберете ниже удобный способ для получения расчета Вашего заказа</p>
+                <b>Как вам удобно получить расчёт</b>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="telegram" value="telegram" name="connection"
+                        checked="checked">
+                    <label class="custom-control-label" for="telegram">Telegram</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="viber" value="viber" name="connection">
+                    <label class="custom-control-label" for="viber">Viber</label>
+                </div>
+
+                <p>9. Комментарии</p>
+                <input placeholder="Есть что-то что вы хотели бы добавить? Напишите это здесь" type="text" id="comment"
+                    name="comment" class="purchase_input w-100"> <label for="comment"></label>
+
+                <p>10. Дополнительные услуги</p>
+                <div class="form-group form-check">
+                    <input type="hidden" class="form-check-input" id="package" name="package" value="no1">
+                    <input type="checkbox" class="form-check-input" id="package" name="package" value="yes1">
+                    <label class="form-check-label" for="package"><span>Дополнительная упаковка посылки 5$ (если Ваш
+                            заказ очень хрупкий)</span></label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="hidden" class="form-check-input" id="foto" name="foto" value="no2">
+                    <input type="checkbox" class="form-check-input" id="foto" name="foto" value="yes2">
+                    <label class="form-check-label" for="foto"><span>Фото товара до отправки в Россию 3$ за
+                            фото</span></label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="hidden" class="form-check-input" id="test" name="test" value="no3">
+                    <input type="checkbox" class="form-check-input" id="test" name="test" value="yes3">
+                    <label class="form-check-label" for="test"><span>Проверка товара до отправки в Россию 5$ за
+                            позицию</span></label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="hidden" class="form-check-input" id="agreement" name="agreement" value="no4">
+                    <input type="checkbox" class="form-check-input" id="agreement" name="agreement" value="yes4"
+                        checked="checked">
+                    <label class="form-check-label" for="agreement"><span>Я соглашаюсь с публичной офертой и <a
+                                href="#confidentiality">политикой
+                                конфиденциальности</a></span></label>
+                </div>
+                <hr class="m-4">
+                <button class="button mx-auto m-1">Оформить заказ</button>
+                <p class="opac">Подтверждая заказ, вы даёте согласие на обработку персональных данных и соглашаетесь с
+                    <a href="#public">публичной офертой</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <hr class="hr" id="send">
+    <!-- ======= Contact Section ======= -->
+    <div class="container">
+        <section class="contact">
+            <!-- <div class="container"> -->
+            <div class="row">
+                <div class="col-8">
+                    <form action="">
+                        <p>В случае возникновения каких-либо проблем заполните эту форму</p>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Как к Вам обращаться">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Ваш email">
+                        <label for="number"></label>
+                        <input type="number" id="number" name="number" placeholder="Ваш номер телефона">
+                        <label for="subject"></label>
+                        <textarea id="subject" name="subject" placeholder="Напишите..." style="height:150px"></textarea>
+                        <input class="submit" type="submit" value="Отправить">
+                    </form>
+                </div>
+                <div class="col-4">
+                    <img src="/assets/img/team/1.jpeg" alt="" height="500px">
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+    </div>
+
+
+
+    <hr id="faq">
+    <!-- ======= FAQ(Frequently Asked Questions Section) Section ======= -->
+    <section class="faq">
+        <div class="faq__content px-xl-5 text-center">
+            <h1>Часто зававаемые <strong>вопросы</strong></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+            </p>
+        </div>
+        <div class="row gy-4 mt-5 d-flex justify-content-between">
+            <div class="col-lg-4">
+                <div class="faq__content px-xl-5 text-center">
+                    <h4></h4>
+                    <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq__content-1">
+                                    <span class="num"></span>
+                                    Как оформить заказ?
+                                </button>
+                            </h3>
+                            <div id="faq__content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Чтобы оформить заказ, нужно заполнить форму заказа, предварительно выбрав цвет и
+                                    размер,
+                                    которые нужно будет указать в форме.
+
+                                    Если форма по каким-то причинам не будет поддаваться Вашим пожеланиям, или в
+                                    конец
+                                    запутает своими вопросами — обращайся за помощью к живому человеку сюда.
+
+                                    Никаких роботов и «Ваш звонок очень важен для нас, ожидайте на линии»
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-2">
+                                    <span class="num"></span>
+                                    Что можно заказть и как?
+                                </button>
+                            </h3>
+                            <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Вы можете выбрать ЛЮБЫЕ товары из списка предлагаемых нами магазинов. Для этого
+                                    выберите<a href="#store_list">предлагаемый из нашего списка магазин</a> -> Выберете
+                                    товар(ы)-> сохраните ссылку на товар, выберете размер и цвет товара и при заполнении
+                                    <a href="#purchase"> формы </a> укажите все данные правильно.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-3">
+                                    <span class="num"></span>
+                                    Какой срок доставки моего заказа?
+                                </button>
+                            </h3>
+                            <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+
+                                    Срок доставки Вашего заказа составляет 12-15 рабочих дней для авиа доставки и
+                                    30-40
+                                    дней
+                                    для доставки морем. Однако, сроки всегда зависят от конкретного магазина.
+
+                                    Минимальный срок доставки составляет 7 дней для некоторых брендов.
+
+                                    Детальную информацию о сроках и датах доставки Вашего заказа вы получите вместе
+                                    с
+                                    расчетом.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-4">
+                                    <span class="num"></span>
+                                    Как получить заказ?
+                                </button>
+                            </h3>
+                            <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Доставку всех товаров мы осуществляем с помощью компании Cdek.
+                                    При заполнении формы мы просили указать номер отделения, в котором вам будет удобно
+                                    получить заказ и после вашей оплаты отправили по этому адресу вашу посылку, а вам
+                                    всю документацию.
+                                    Вам необходимо в назначеный срок, по указаному вами адресу подойти в отделение
+                                    пункта Cdek с номером отслеживания и показать его.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+                    </div>
+                </div>
+                <!--end accordion-->
+            </div>
+            <!--end col-->
+            <div class="col-lg-4">
+                <div class="faq__content px-xl-5 text-center">
+                    <h4></h4>
+                    <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-5">
+                                    <span class="num"></span>
+                                    Как оформить заказ?
+                                </button>
+                            </h3>
+                            <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Чтобы оформить заказ, нужно заполнить <a href="#purchase">форму заказа</a>,
+                                    предварительно выбрав цвет и
+                                    размер товара, который вы хотите заказать, так как эти данные необходимо будет
+                                    указать в форме.
+
+                                    Если форма по каким-то причинам не будет поддаваться Вашим пожеланиям, или в
+                                    конец
+                                    запутает своими вопросами — обращайся за помощью <a href="#send">сюда</a>.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-6">
+                                    <span class="num"></span>
+                                    Где посмотреть, что можно заказать?
+                                </button>
+                            </h3>
+                            <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Мы создали для вас удобный <a href="#store_list">список самых популярных
+                                        магазино</a> в, из которых вы чаще
+                                    всего
+                                    оформляете заказы. Он далеко не полный, но уверены, они станут отличным стартом
+                                    для
+                                    знакомства с онлайн-шопингом
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-7">
+                                    <span class="num"></span>
+                                    Могу ли я сделать заказ с сайта, которого нет в вашем перечне?
+                                </button>
+                            </h3>
+                            <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    К сожалению? на текущий момент вы можете выбрать только из <a
+                                        href="#store_list">предлагаемых нами
+                                        магазинов</a>.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-8">
+                                    <span class="num"></span>
+                                    Возврат и обмен
+                                </button>
+                            </h3>
+                            <div id="faq-content-8" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    К сожалению, это невозможно. Мы просим вас тщательно просматривать и проверять
+                                    указаные вами размеры и цвета товаров, а также ссылки на товары. И руководствоваться
+                                    таблицами размеров перед покупкой, так как каждый товар и разные бренды имеют свои
+                                    ликала и размерные сетки.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-9">
+                                    <span class="num"></span>
+                                    Кредиты
+                                </button>
+                            </h3>
+                            <div id="faq-content-9" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Мы выкупаем товар после вашей оплаты и берем комиссию за свою работу. Мы еще
+                                    маленькая компания, чтобы предоставлять кредиты/рассрочки/платежи по частям, но мы
+                                    думаем о том, как сделать разные способы оплаты для вашего удобства.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+                    </div>
+                </div>
+                <!--end accordion-->
+            </div>
+            <!--end col-->
+            <div class="col-lg-4">
+                <div class="faq__content px-xl-5 text-center">
+                    <h4></h4>
+                    <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-10">
+                                    <span class="num"></span>
+                                    Как оформить заказ?
+                                </button>
+                            </h3>
+                            <div id="faq-content-10" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Чтобы оформить заказ, нужно заполнить форму заказа, предварительно выбрав цвет и
+                                    размер,
+                                    которые нужно будет указать в форме.
+
+                                    Если форма по каким-то причинам не будет поддаваться Вашим пожеланиям, или в
+                                    конец
+                                    запутает своими вопросами — обращайся за помощью к живому человеку сюда.
+
+                                    Никаких роботов и «Ваш звонок очень важен для нас, ожидайте на линии»
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-11">
+                                    <span class="num"></span>
+                                    Где посмотреть, что можно заказать?
+                                </button>
+                            </h3>
+                            <div id="faq-content-11" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Мы создали для вас удобный список самых популярных магазинов, из которых вы чаще
+                                    всего
+                                    оформляете заказы. Он далеко не полный, но уверены, они станут отличным стартом
+                                    для
+                                    знакомства с онлайн-шопингом
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-12">
+                                    <span class="num"></span>
+                                    Какой срок доставки моего заказа?
+                                </button>
+                            </h3>
+                            <div id="faq-content-12" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+
+                                    Срок доставки Вашего заказа составляет 12-15 рабочих дней для авиа доставки и
+                                    30-40
+                                    дней
+                                    для доставки морем. Однако, сроки всегда зависят от конкретного магазина.
+
+                                    Минимальный срок доставки составляет 7 дней для некоторых брендов.
+
+                                    Детальную информацию о сроках и датах доставки Вашего заказа вы получите вместе
+                                    с
+                                    расчетом.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-13">
+                                    <span class="num"></span>
+                                    Где посмотреть, что можно заказать?
+                                </button>
+                            </h3>
+                            <div id="faq-content-13" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Мы создали для вас удобный список самых популярных магазинов, из которых вы чаще
+                                    всего
+                                    оформляете заказы. Он далеко не полный, но уверены, они станут отличным стартом
+                                    для
+                                    знакомства с онлайн-шопингом
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-content-14">
+                                    <span class="num"></span>
+                                    Какой срок доставки моего заказа?
+                                </button>
+                            </h3>
+                            <div id="faq-content-15" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+
+                                    Срок доставки Вашего заказа составляет 12-15 рабочих дней для авиа доставки и
+                                    30-40
+                                    дней
+                                    для доставки морем. Однако, сроки всегда зависят от конкретного магазина.
+
+                                    Минимальный срок доставки составляет 7 дней для некоторых брендов.
+
+                                    Детальную информацию о сроках и датах доставки Вашего заказа вы получите вместе
+                                    с
+                                    расчетом.
+                                </div>
+                            </div>
+                        </div><!-- # Faq item-->
+                    </div>
+                </div>
+                <!--end accordion-->
+            </div>
+            <!--end col-->
+    </section>
+
+
+
+
+    <div id="price"></div>
+    <!-- ======= price Section ======= -->
+    <section class="price">
+        <div class="container">
+            <div class="price__circle"></div>
+            <hr>
+            <div class="text-center">
+                <h2>Стоимость услуг</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad commodi fugiat, quas esse quam
+                    laborum, laudantium inventore eum in harum tempore soluta veniam. Veritatis sit molestiae excepturi!
+                    Dicta, ut.</p>
+
+            </div>
+
+            <hr>
+            <div class="price__circle"></div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ======= Reviews Section - отзывы ======= -->
+    <section class="reviews">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="text-center">
+                        <h2>Отзывы наших клиентов</h2>
+                        <p class="mb-5">Мы благодарным вам за доверие, и делаем всё, чтобы вы смогли получить
+                            желанный оригинальный
+                            товар по выгодной цене</p>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="boks d-flex justify-content-between">
+                            <div class="card" style="width: 30%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Оксана Шестакова</h5>
+                                    <p class="card-text">Получила сумочку. Очень хорошо упакована. Сумка красивая,
+                                        соответствует описанию. Но, грубовата, на мой вкус, и тяжеловата, если бы я её
+                                        смотрела в реальности, не взяла. Спасибо большое за скидку, очень приятно!
+                                        Спасибо за оперативность, внимательность к покупателям. Процветания Вашему
+                                        магазину и всех благ!</p>
+                                    <img src="https://i.pinimg.com/564x/19/fa/65/19fa653cf7c7e9c5c848a068a30c0baf.jpg"
+                                        class="card-img-top" alt="..." width="400px" height="400px">
+                                </div>
+                            </div>
+                            <!-- /card -->
+                            <div class="card" style="width: 30%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Оксана Шестакова</h5>
+                                    <p class="card-text">Получила сумочку. Очень хорошо упакована. Сумка красивая,
+                                        соответствует описанию. Но, грубовата, на мой вкус, и тяжеловата, если бы я её
+                                        смотрела в реальности, не взяла. Спасибо большое за скидку, очень приятно!
+                                        Спасибо за оперативность, внимательность к покупателям. Процветания Вашему
+                                        магазину и всех благ!</p>
+                                    <img src="https://i.pinimg.com/564x/b4/e1/37/b4e137b0266aa0a9c466184190ac0dcc.jpg"
+                                        class="card-img-top" alt="..." width="400px" height="400px">
+                                </div>
+                            </div>
+                            <!-- /card -->
+                            <div class="card" style="width: 30%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Оксана Шестакова</h5>
+                                    <p class="card-text">Получила сумочку. Очень хорошо упакована. Сумка красивая,
+                                        соответствует описанию. Но, грубовата, на мой вкус, и тяжеловата, если бы я её
+                                        смотрела в реальности, не взяла. Спасибо большое за скидку, очень приятно!
+                                        Спасибо за оперативность, внимательность к покупателям. Процветания Вашему
+                                        магазину и всех благ!</p>
+                                    <img src="https://i.pinimg.com/564x/31/8e/c6/318ec6e1ab49386c15cdb10fc124dd7d.jpg"
+                                        class="card-img-top" alt="..." width="400px" height="400px">
+                                </div>
+                            </div>
+                            <!-- /card -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="boks d-flex justify-content-between">
+                            <div class="card" style="width: 30%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Оксана Шестакова</h5>
+                                    <p class="card-text">Получила сумочку. Очень хорошо упакована. Сумка красивая,
+                                        соответствует описанию. Но, грубовата, на мой вкус, и тяжеловата, если бы я её
+                                        смотрела в реальности, не взяла. Спасибо большое за скидку, очень приятно!
+                                        Спасибо за оперативность, внимательность к покупателям. Процветания Вашему
+                                        магазину и всех благ!</p>
+                                    <img src="https://i.pinimg.com/564x/19/c6/7f/19c67f7239c1978c34e8013c5408d08b.jpg"
+                                        class="card-img-top" alt="..." width="400px" height="400px">
+                                </div>
+                            </div>
+                            <!-- /card -->
+                            <div class="card" style="width: 30%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Оксана Шестакова</h5>
+                                    <p class="card-text">Получила сумочку. Очень хорошо упакована. Сумка красивая,
+                                        соответствует описанию. Но, грубовата, на мой вкус, и тяжеловата, если бы я её
+                                        смотрела в реальности, не взяла. Спасибо большое за скидку, очень приятно!
+                                        Спасибо за оперативность, внимательность к покупателям. Процветания Вашему
+                                        магазину и всех благ!</p>
+                                    <img src="https://i.pinimg.com/564x/cb/82/2d/cb822d7249c6b3fa377d00ebe5e589d3.jpg"
+                                        class="card-img-top" alt="..." width="400px" height="400px">
+                                </div>
+                            </div>
+                            <!-- /card -->
+                            <div class="card" style="width: 30%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Оксана Шестакова</h5>
+                                    <p class="card-text">Получила сумочку. Очень хорошо упакована. Сумка красивая,
+                                        соответствует описанию. Но, грубовата, на мой вкус, и тяжеловата, если бы я её
+                                        смотрела в реальности, не взяла. Спасибо большое за скидку, очень приятно!
+                                        Спасибо за оперативность, внимательность к покупателям. Процветания Вашему
+                                        магазину и всех благ!</p>
+                                    <img src="https://i.pinimg.com/564x/09/33/ab/0933ab606ae574d56fffcd9a83493eb1.jpg"
+                                        alt="..." width="400px" height="400px">
+                                </div>
+                            </div>
+                            <!-- /card -->
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ======= Footer Section ======= -->
+    <footer id="#contact">
+        <div class="container">
+            <div class="footer__wrapper d-flex">
+                <p class="copyright">
+                    © 2022 Auto theme by Frontend Tricks
+                </p>
+                <div class="footer__soc">
+                    <a href="#" class="footer__link">
+                        <img src="/assets/img/footer/facebook.svg" alt="">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="footer__link">
+                        <img src="/assets/img/footer/instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

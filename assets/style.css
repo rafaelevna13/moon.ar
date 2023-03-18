@@ -1,0 +1,582 @@
+/* Fonts */
+:root {
+  --font-default: 'BhuTuka Expanded One', cursive;
+  ;
+  --font-primary: 'Nanum Gothic', sans-serif;
+  --font-secondary: 'Playfair Display', serif;
+}
+
+/* Colors */
+:root {
+  --color-w: #fff;
+  --color-b: #3e3631;
+  --color-default: #887569;
+  --color-secondary: #c4a996;
+  --color-primary: #ebcccc;
+  --color-primary2: rgb(233, 215, 215);
+
+}
+
+/* Smooth scroll behavior - Плавное поведение прокрутки */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #fff;
+  color: var(--color-default);
+  font-family: var(--font-default);
+}
+
+a {
+position: relative;
+color: var(--color-default);
+/*задаём цвет ссылки*/
+cursor: pointer;
+line-height: 1;
+/*задаём высоту строки*/
+text-decoration: none;
+/*убираем подчёркивание*/
+}
+
+a:hover {
+  color: var(--color-w);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+h1 {
+  color: var(--color-b);
+}
+
+title {
+  color: var(--color-w);
+}
+
+.hr__id{
+  border: none;
+  color: var(--color-w);
+}
+/*-------------------------------------------------------------- 
+# navbar --------------------------------------------------------------*/
+
+.navbar__a {
+  text-decoration: none;
+  color: var(--color-b);
+  position: relative;
+}
+
+.navbar__a:hover {
+  text-decoration: none;
+  color: var(--color-w);
+  transition: 0.5s;
+}
+
+.navbar__a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0;
+  /*задаём длинну линии до наведения курсора*/
+  height: 2px;
+  /*задаём ширину линии*/
+  background-color: var(--color-default);
+  /*задаём цвет линии*/
+  content: "";
+  transition: width 0.3s ease-out;
+  /*задаём время анимации*/
+  text-decoration: none;
+}
+
+.navbar__a:hover:after,
+.navbar__a:focus:after {
+  width: 100%;
+  /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+  text-decoration: none;
+}
+
+
+
+/* a:visited{
+  color: #eb645f;
+} */
+
+
+
+/*-------------------------------------------------------------- 
+# Desktop Navigation --------------------------------------------------------------*/
+@media (min-width: 1280px) {
+  .navbar {}
+
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  .navbar li {
+    padding: 0px 15px 0px 15px;
+  }
+
+
+}
+
+
+/*--------------------------------------------------------------
+# Mobile Navigation
+--------------------------------------------------------------*/
+@media (max-width: 1279px) {
+  .navbar {}
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {}
+
+  .col-25 {}
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+#Header
+--------------------------------------------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  transition: 0.4s;
+  background-color: var(--color-secondary);
+  opacity: 0.6;
+  color: black;
+  padding: 0 0 0 15px;
+}
+
+.logo,
+.logo:hover {
+  text-decoration: none;
+  color: var(--color-b);
+  font-family: 'BhuTuka Expanded One', cursive;
+  font-size: 22px;
+}
+
+.logo h1 {
+  color: rgb(255, 255, 255);
+}
+
+.logo span {
+  color: white;
+}
+
+
+
+/*--------------------------------------------------------------
+#About_Us Section
+--------------------------------------------------------------*/
+.About_Us {
+  width: 100%;
+  position: relative;
+  background: var(--color-secondary);
+  height: 1000px;
+}
+
+@media (min-width: 1365px) {
+  .About_Us {
+    background-attachment: fixed;
+  }
+}
+
+.About_Us__text h1 {
+  font-size: 60px;
+}
+
+.About_Us__all {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -30%);
+}
+
+
+
+
+/*--------------------------------------------------------------
+#Instruction Section
+--------------------------------------------------------------*/
+.instruction {
+  margin: 100px 0 10px 0;
+  color: var(--color-default);
+  height: 800px;
+  width: 100%;
+}
+
+.instruction_form {
+  height: 450px;
+  width: 24%;
+  border-color: var(--color-secondary);
+  padding: 30px 30px 20px;
+  min-height: 150px;
+  background: #FFFFFF;
+  box-shadow: 0 0 20px var(--color-default);
+}
+
+.instruction_form h1 {
+  font-family: var(--font-default);
+  font-size: 70px;
+}
+
+.instruction_form span {
+  font-family: var(--font-default);
+  font-size: 40px;
+}
+
+.instruction_form i {
+  font-family: var(--color-secondary);
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+#Store_list Section 
+--------------------------------------------------------------*/
+.store_list {
+  background-color:  #eddacc;
+  padding: 100px 0 100px 0;
+}
+.store_list__multi{
+  margin-bottom: 100px;
+}
+.store_list__multi p, .store_list__mono p{
+  color: var(--color-w) !important;
+  margin-bottom: 50px;
+}
+
+.store_list__multi img, .store_list__mono img{
+  width: 50%;
+}
+table {
+  border-collapse: collapse;
+  /*убираем пустые промежутки между ячейками*/
+  width: 100%;
+  background-color: var(--color-w);
+}
+th {
+  width: 20%;
+  height: 150px;
+  border-color: var(--color-w);
+}
+td{
+  border: 1px solid var(--color-b) !important;
+}
+
+
+
+
+/*--------------------------------------------------------------
+#Purchase Section
+--------------------------------------------------------------*/
+.purchase {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  color: var(--color-default);
+}
+
+.purchase_form {
+  margin-top: 50px;
+}
+
+.purchase_form a,
+.instruction a {
+  /* text-decoration:none; */
+  color: var(--color-secondary);
+}
+
+.purchase_form a:hover,
+.instruction a:hover {
+  text-decoration: none;
+  color: var(--color-b);
+}
+
+.purchase_form a:active,
+.instruction a:active {
+  text-decoration: none;
+  color: var(--color-default);
+}
+
+.text-center p {
+  color: var(--color-secondary);
+  font-size: 16px;
+}
+
+input, textarea {
+  opacity: 0.7;
+  padding: 10px;
+  outline-color: var(--color-secondary);
+}
+
+input:focus, textarea:focus {
+  color: var(--color-b);
+  outline-color: var(--color-primary);
+  transition: 0.6s;
+}
+
+.purchase_form span {
+  opacity: 0.7;
+  color: var(--color-default);
+}
+
+.purchase_input::after {
+  color: var(--color-b);
+}
+
+
+
+/* label{
+  transition: 0.9s;
+} */
+
+/* .purchase_form a:visited{
+  text-decoration:none;
+  color:var(--color-primary);
+} */
+
+
+.button {
+  width: 200px;
+  color: var(--color-default);
+  outline: 0.5px solid;
+  outline-color: var(--color-default);
+  border: none;
+  border-radius: 2px;
+  border-width: 1px;
+  padding: 10px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.button0 {
+  width: 180px;
+  color: var(--color-default);
+  outline: 0.5px solid;
+  outline-color: var(--color-default);
+  border: none;
+  border-width: 1px;
+  padding: 5px 5px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.button:hover {
+  background: var(--color-secondary);
+  outline: 1px double;
+  outline-offset: 2px;
+  color: var(--color-default);
+  opacity: 0.9;
+  transition: 0.4s;
+}
+
+.button:active,
+.button0:active {
+  background: var(--color-default);
+  outline: 2px double;
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+#Contact Section
+--------------------------------------------------------------*/
+.contact {
+  margin: 150px 0 160px 0;
+  width: 100%;
+  height: 500px;
+  background: rgb(233, 215, 215);
+  box-shadow: 5px 5px 10px, -5px -5px 10px var(--color-primary);
+}
+
+.opac {
+  color: var(--color-secondary);
+}
+
+.contact input, .contact textarea {
+  width: 80%;
+  border: 1px solid var(--color-w);
+  background-color: var(--color-primary);
+  margin: 5px 0 0 0;
+}
+
+.contact p{
+  text-shadow: 5px 5px 15px, -5px -5px 8px var(--color-w);
+  font-family: var(--font-default);
+  align-items: center;
+  color: var(--color-default);
+}
+
+.contact form{
+  margin: 5% 0 auto 10%;
+}
+
+.submit{
+  background-color: var(--color-default) !important;
+  color: var(--color-primary);
+}
+
+
+
+/*--------------------------------------------------------------
+#FAQ Section
+--------------------------------------------------------------*/
+.faq {
+  color: var(--color-default);
+  min-width: 600px;
+  top: auto;
+  margin-top: 150px;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+#price Section
+--------------------------------------------------------------*/
+.price{
+  margin: 100px 0 100px 0;
+  min-width: 600px;
+}
+
+/* .animate {
+  width: 100%;
+  animation: flow 9s ease-in-out infinite;
+  background: linear-gradient(50deg, var(--color-b), var(--color-primary), var(--color-default);
+      background-size: 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes flow {
+    0% {
+      background-position: 0 20%
+    }
+
+    20% {
+      background-position: 20% 100%
+    }
+
+    100% {
+      background-position: 0 20%
+    }
+  } */
+
+  .content__circle, .price__circle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-primary2);
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    animation-duration: 8s;
+    animation-name: white-circle;
+    animation-timing-function: linear;
+    animation-delay: 1s;  /* задержка */
+    animation-fill-mode: forwards;
+  }
+
+  .price:hover .content__circle{
+    animation-play-state: paused;
+  }
+
+
+  @keyframes white-circle {
+    0% {
+      left: 0;
+    }
+    50%{
+      border-radius: 30%;
+      width: 50px;
+      height: 50px;
+      background-color: var(--color-w);
+
+    }
+    100% {
+      left: 99%;
+    }
+  }
+
+
+
+
+  /*--------------------------------------------------------------
+#Reviews Section
+--------------------------------------------------------------*/
+
+  .reviews {
+    color: var(--color-default);
+    height: 800px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+
+
+
+
+
+
+
+  /*--------------------------------------------------------------
+#Footer  Section
+--------------------------------------------------------------*/
+
+  footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-secondary);
+    color: var(--color-w);
+  }
+
+
